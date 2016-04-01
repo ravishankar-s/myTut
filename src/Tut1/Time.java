@@ -16,4 +16,12 @@ public class Time {
 		return "hrs:"+ hrs + " mins:"+ mins + " secs:"+ secs;
 	}
 
+	public boolean equals(Time t1){
+		int tseconds = (hrs*60*60)+(mins*60)+ secs;
+		int t1secnds = (t1.hrs*60*60)+(t1.mins*60)+t1.secs;
+		if(tseconds==t1secnds)
+			return true;
+		else 
+			return false;
+	}
 }

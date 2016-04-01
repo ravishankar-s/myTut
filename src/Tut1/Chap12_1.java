@@ -7,7 +7,10 @@ public class Chap12_1 {
 	test.mins = 30;
 	test.secs = 60;
 	Time rv = new Time(10,10,10);
-	System.out.println(rv.toString());
+	if(test.equals(rv))
+	System.out.println("same time");
+	else
+		System.out.println("different time");
 	}
 	
 
